@@ -99,6 +99,13 @@ img {
   color: #64ccc5;
 }
 
+.hero-section .image-side img {
+  width: 500px;
+  height: 300px;
+
+  object-fit: cover;
+}
+
 .mb20 {
   margin-bottom: 20px;
 }
@@ -114,6 +121,45 @@ img {
 .hero-section .brands img {
   height: 50px;
 }
+
+.banner-section {
+  background-image: url(../img/banner-bkg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: 30%; */
+  color: white;
+  padding: 100px 0;
+  position: relative;
+}
+
+.banner-section::before {
+  content: "";
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  top: 90px;
+  left: 0;
+  right: 0;
+  bottom: 80px;
+  z-index: 0;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.4);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+}
+
+.banner-section .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Responsive */
 
 @media only screen and (max-width: 768px) {
   .row {
