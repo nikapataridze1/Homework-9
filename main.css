@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.title {
+  font-weight: 600;
+  color: #64ccc5;
+  text-align: center;
+  font-family: "Roboto Serif", serif;
+  font-size: 30px;
+  margin-bottom: 24px;
+}
+
+.main-title {
+  font-size: 64px;
+  font-weight: 600;
+  text-align: center;
+  font-family: "Roboto Serif", serif;
+}
+
+.mb80 {
+  margin-bottom: 80px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  background-color: #f4f4f4;
+  padding: 45px;
+  border-radius: 20px;
+  width: 422px;
+  display: flex;
+  flex-direction: column;
+  gap: 62px;
+  justify-content: space-between;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 66px;
+  justify-content: center;
+}
+
+.card-text {
+  font-weight: 400;
+  font-style: regular;
+  font-size: 18px;
+  letter-spacing: 3%;
+  line-height: 100%;
+  font-family: "DM Sans", sans-serif;
+}
+
+.card-title {
+  font-weight: 500;
+  font-size: 25px;
+  letter-spacing: 0%;
+  line-height: 100%;
+  font-style: medium;
+  margin-bottom: 17px;
+  font-family: "Roboto Serif", serif;
+}
+
+.icon {
+  width: 80px;
+}
+
+@media only screen and (max-width: 768px) {
+  .card {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .card {
+    width: calc(50%-200px);
+  }
+}
+
+.card:hover {
+  background-color: #0c0c0c;
+  color: #f4f4f4;
+}
