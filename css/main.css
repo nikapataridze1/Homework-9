@@ -48,6 +48,7 @@ body {
   flex-direction: column;
   gap: 62px;
   justify-content: space-between;
+  flex: 1 1 calc(33.33% - 62px);
 }
 
 .cards {
@@ -55,6 +56,8 @@ body {
   flex-wrap: wrap;
   gap: 66px;
   justify-content: center;
+  max-width: 1400px;
+  padding: 0 20px;
 }
 
 .card-text {
@@ -82,13 +85,13 @@ body {
 
 @media only screen and (max-width: 768px) {
   .card {
-    width: 100%;
+    flex: 1 1 calc(100%);
   }
 }
 
 @media only screen and (max-width: 1024px) {
   .card {
-    width: calc(50%-200px);
+    flex: 1 1 calc(50% - 62px);
   }
 }
 
